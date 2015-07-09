@@ -26,4 +26,5 @@
 
 + (NSString *)ingredientVolumeAtIndex:(NSInteger)ingIndex inRecipeAtIndex:(NSInteger)recIndex;
 
++ (NSArray *)directionsAtIndex:(NSInteger)index;
 @end

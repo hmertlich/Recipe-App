@@ -8,8 +8,10 @@
 
 #import "RAViewController.h"
 #import "RecipesTableViewDataSource.h"
+#import "RecipeDetailViewController.h"
+#import "RARecipes.h"
 
-@interface RAViewController ()
+@interface RAViewController () 
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) RecipesTableViewDataSource *dataSource;
@@ -29,13 +31,27 @@
     
 //    [self.dataSource regTableView:self.tableView];
     
+    self.tableView.delegate = self;
+    
     self.tableView.dataSource = self.dataSource;
     
     [self.view addSubview:self.tableView];
  
+    self.title =@"Recipes App";
+    
  
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    RecipeDetailViewController *recipeDetailViewController = [RecipeDetailViewController new];
+    recipeDetailViewController.recipeIndex = indexPath.row;
+    [self.navigationController pushViewController:recipeDetailViewController animated:YES];
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
