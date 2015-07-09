@@ -12,8 +12,6 @@ you need to make sure you do not have a forIndexPath set when Instantiating the 
 
 static NSString *cellID = @"cellID";
 
-static NSString* identifier =@"cell";
-
 @implementation RecipesTableViewDataSource
 //
 //- (void)regTableView:(UITableView *)tableView {

@@ -9,8 +9,6 @@
 #import "RAViewController.h"
 #import "RecipesTableViewDataSource.h"
 
-static NSString* identifier =@"cell";
-
 @interface RAViewController ()
 
 @property (strong, nonatomic) UITableView *tableView;
