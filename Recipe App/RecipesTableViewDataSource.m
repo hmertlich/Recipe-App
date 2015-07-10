@@ -9,6 +9,7 @@ you need to make sure you do not have a forIndexPath set when Instantiating the 
 //
 
 #import "RecipesTableViewDataSource.h"
+#import "RecipeDetailViewController.h"
 
 static NSString *cellID = @"cellID";
 
@@ -36,11 +37,14 @@ static NSString *cellID = @"cellID";
     
     cell.textLabel.text = [RARecipes titleAtIndex:indexPath.row];
     cell.detailTextLabel.text = [RARecipes descriptionAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:[RecipesTableViewDataSource imagesArray][indexPath.row]];
     
     return cell;
 }
 
-
-
++(NSArray *)imagesArray
+{
+    return @[@"herbgarlicport_360.png",@"glazedsalmon_360.png",@"pumpkinpie_360.png",@"chickenJumb.png",@"chocolatecake_360.png"];
+}
 
 @end

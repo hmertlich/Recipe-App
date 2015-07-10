@@ -8,9 +8,10 @@
 
 #import "RecipeDetailViewController.h"
 #import "RARecipes.h"
+#import "RecipesTableViewDataSource.h"
 
 static CGFloat margin = 15;
-
+static NSString *imageID;
 @interface RecipeDetailViewController ()
 
 //@property (nonatomic, assign) NSInteger recipeIndex;
@@ -26,19 +27,15 @@ static CGFloat margin = 15;
     self.view.backgroundColor =[UIColor whiteColor];
     self.title = [RARecipes titleAtIndex:self.recipeIndex];
 
-    self.topMargin = 20;
+    self.topMargin = 350;
     
     CGFloat heightForDescription = [self heightForDescriptions:[RARecipes descriptionAtIndex:self.recipeIndex]];
     
     UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:scrollView];
     
-    UIImage *image = [UIImage imageNamed:@"food.png"];
-    UIImageView *recipeImage = [[UIImageView alloc]initWithImage:image];
-    [scrollView addSubview:recipeImage];
-    
    
-    
+    //
     UILabel *descriptionLabel = [[UILabel alloc]initWithFrame:CGRectMake(margin, self.topMargin, self.view.frame.size.width-2*margin, heightForDescription)];
     descriptionLabel.font = [UIFont boldSystemFontOfSize:14];
     descriptionLabel.text = [RARecipes descriptionAtIndex:self.recipeIndex];
@@ -47,6 +44,12 @@ static CGFloat margin = 15;
     descriptionLabel.numberOfLines =0;
     
     [scrollView addSubview:descriptionLabel];
+    
+    
+    //Adds an image of the food to the top of the description view.
+    UIImage *image = [UIImage imageNamed:[RARecipes imageAtIndex:self.recipeIndex]];
+    UIImageView *recipeImage = [[UIImageView alloc]initWithImage:image];
+    [scrollView addSubview:recipeImage];
     
     CGFloat top = self.topMargin+heightForDescription +margin*2;
     
@@ -59,7 +62,6 @@ static CGFloat margin = 15;
     
     for (int i =0; i<[RARecipes ingredientCountAtIndex:self.recipeIndex]; i++) {
         
-#warning check the volume label fonts, bold or italic?
         
         UILabel *volume = [[UILabel alloc]initWithFrame:CGRectMake(margin, top, (self.view.frame.size.width-2*margin)/4, 44)];
         volume.font = [UIFont italicSystemFontOfSize:15];

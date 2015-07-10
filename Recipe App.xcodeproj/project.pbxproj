@@ -11,6 +11,11 @@
 		24DCBDCC1B4DBA1E00147EE2 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DCBDCB1B4DBA1E00147EE2 /* RARecipes.m */; };
 		24DCBDCF1B4DBAFF00147EE2 /* RecipesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DCBDCE1B4DBAFF00147EE2 /* RecipesTableViewDataSource.m */; };
 		24DCDE4D1B4F012C005788A9 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DCDE4C1B4F012C005788A9 /* RecipeDetailViewController.m */; };
+		24DCDE531B4F3A17005788A9 /* chocolatecake_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDE4E1B4F3A17005788A9 /* chocolatecake_360.png */; };
+		24DCDE541B4F3A17005788A9 /* glazedsalmon_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDE4F1B4F3A17005788A9 /* glazedsalmon_360.png */; };
+		24DCDE551B4F3A17005788A9 /* herbgarlicport_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDE501B4F3A17005788A9 /* herbgarlicport_360.png */; };
+		24DCDE561B4F3A17005788A9 /* pumpkinpie_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDE511B4F3A17005788A9 /* pumpkinpie_360.png */; };
+		24DCDE571B4F3A17005788A9 /* chickenJumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DCDE521B4F3A17005788A9 /* chickenJumb.png */; };
 		71F67B51192C8D6A00E609F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B50192C8D6A00E609F1 /* Foundation.framework */; };
 		71F67B53192C8D6A00E609F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */; };
 		71F67B55192C8D6A00E609F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F67B54192C8D6A00E609F1 /* UIKit.framework */; };
@@ -44,6 +49,11 @@
 		24DCBDCE1B4DBAFF00147EE2 /* RecipesTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesTableViewDataSource.m; sourceTree = "<group>"; };
 		24DCDE4B1B4F012C005788A9 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		24DCDE4C1B4F012C005788A9 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
+		24DCDE4E1B4F3A17005788A9 /* chocolatecake_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chocolatecake_360.png; path = photos/chocolatecake_360.png; sourceTree = "<group>"; };
+		24DCDE4F1B4F3A17005788A9 /* glazedsalmon_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glazedsalmon_360.png; path = photos/glazedsalmon_360.png; sourceTree = "<group>"; };
+		24DCDE501B4F3A17005788A9 /* herbgarlicport_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = herbgarlicport_360.png; path = photos/herbgarlicport_360.png; sourceTree = "<group>"; };
+		24DCDE511B4F3A17005788A9 /* pumpkinpie_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pumpkinpie_360.png; path = photos/pumpkinpie_360.png; sourceTree = "<group>"; };
+		24DCDE521B4F3A17005788A9 /* chickenJumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chickenJumb.png; path = photos/chickenJumb.png; sourceTree = "<group>"; };
 		71F67B4D192C8D6A00E609F1 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F67B50192C8D6A00E609F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71F67B52192C8D6A00E609F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +148,11 @@
 		71F67B57192C8D6A00E609F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24DCDE4E1B4F3A17005788A9 /* chocolatecake_360.png */,
+				24DCDE4F1B4F3A17005788A9 /* glazedsalmon_360.png */,
+				24DCDE501B4F3A17005788A9 /* herbgarlicport_360.png */,
+				24DCDE511B4F3A17005788A9 /* pumpkinpie_360.png */,
+				24DCDE521B4F3A17005788A9 /* chickenJumb.png */,
 				71F67B58192C8D6A00E609F1 /* Recipe App-Info.plist */,
 				71F67B59192C8D6A00E609F1 /* InfoPlist.strings */,
 				71F67B5C192C8D6A00E609F1 /* main.m */,
@@ -240,8 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DCDE541B4F3A17005788A9 /* glazedsalmon_360.png in Resources */,
+				24DCDE531B4F3A17005788A9 /* chocolatecake_360.png in Resources */,
 				71F67B5B192C8D6A00E609F1 /* InfoPlist.strings in Resources */,
+				24DCDE561B4F3A17005788A9 /* pumpkinpie_360.png in Resources */,
 				71F67B63192C8D6A00E609F1 /* Images.xcassets in Resources */,
+				24DCDE551B4F3A17005788A9 /* herbgarlicport_360.png in Resources */,
+				24DCDE571B4F3A17005788A9 /* chickenJumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
